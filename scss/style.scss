@@ -1,0 +1,306 @@
+@import 'variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $ff;
+    background-color: $color-dark-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-mobile{
+    display: none;
+}
+
+
+
+.sign__up{
+    background-color: $color-white;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    max-width: 47vw;
+    max-height: 65vh;
+
+        div > img{
+            padding-block: 1.2rem;
+            height: 100%;
+            max-width: 100%;
+        }
+
+        .text{
+            margin-block: 4.4rem;
+            margin-left: 3.5rem;
+            margin-right: 1rem;
+        }
+
+        h1{
+            font-size: 3.2rem;
+            color: dark;
+            margin-bottom: 1.2rem;
+        }
+
+         .p-1{
+            font-size: .9rem;
+            color: $color-dark-grey;
+            width: 90%;
+            margin-bottom: 1.4rem;
+        }
+
+        .text__marks {          
+            font-size: .9rem;
+            line-height: 2.2;
+            margin-bottom: 2.5rem;
+                      }
+            p{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+            }
+            
+            form{
+                display: flex;
+                flex-direction: column;
+
+                margin-right: 3.5rem;
+
+                
+                
+                label{
+                    font-size: .620rem;
+                    color: dark;
+                    font-weight: 700;
+                    margin-bottom: .6rem;
+                    display: flex;
+                    justify-content: space-between;
+
+                    span{
+                        color: red;
+                    }
+                }
+
+                input{
+                    width: 100%;
+                    padding: .950rem;
+                    margin-bottom: 1.5rem;
+                    border-radius: 6px;
+                    border: 1px solid $color-grey;
+                    outline: none;
+                    font-family: $ff;
+                    cursor: pointer;
+
+                    &::placeholder{
+                        color: $color-grey;
+                    }
+
+                    &:focus{
+                        border:1px solid black;
+                    }
+
+                    
+                      
+                      
+                      
+                      
+                      
+                }
+
+                #btn{
+                    display: block;
+                    color: $color-white;
+                    background-color: $color-dark-grey;
+                    font-family: $ff;
+                    padding: .9rem;
+                    font-weight: 500;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    cursor: pointer;
+                        &:hover{
+                            background: rgb(255,141,0);
+                            background: linear-gradient(335deg, rgba(255,141,0,1) 0%, rgba(245,0,0,1) 99%, rgba(255,106,6,1) 100%, rgba(255,72,0,1) 100%);
+                            -webkit-box-shadow: 10px 10px 47px -18px rgba(255,0,0,1);
+                            -moz-box-shadow: 10px 10px 47px -18px rgba(255,0,0,1);
+                            box-shadow: 10px 10px 47px -18px rgba(255,0,0,1);  
+                               }   
+                }
+            }
+}
+
+
+
+
+
+
+// success 
+
+.success{
+    display: block;
+    max-width: 23vw;
+    background-color: $color-white;
+    border-radius: 25px;
+    min-height: 47vh;   
+    padding-block: 1.7rem;
+    padding-left: 2.9rem;
+    padding-right: 1rem;
+     img{
+        width: 15%;
+        display: block;
+        margin-top: .5rem;
+     }
+
+     h2{
+        width: 100%;
+        margin-top: 1.6rem;
+        font-size: 2.8rem;
+        line-height: 1;
+        margin-bottom: 1.3rem;
+     }
+
+     p{
+        font-size: .8rem;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-right: 2rem;
+    }
+
+    #dissmissBtn{
+        width: 91%;
+        color: $color-white;
+        padding: 1rem;
+        border: none;
+        margin-top: 1.8rem;
+        background-color: $color-dark-grey;
+        border-radius: 8px;
+        font-size: .8rem;
+        font-weight: 500;
+        font-family: $ff;
+
+        &:hover{
+            background: rgb(255,141,0);
+            background: linear-gradient(335deg, rgba(255,141,0,1) 0%, rgba(245,0,0,1) 99%, rgba(255,106,6,1) 100%, rgba(255,72,0,1) 100%);
+            -webkit-box-shadow: 10px 10px 47px -18px rgba(255,0,0,1);
+            -moz-box-shadow: 10px 10px 47px -18px rgba(255,0,0,1);
+            box-shadow: 10px 10px 47px -18px rgba(255,0,0,1);  
+               }   
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:990px){
+    
+    .img-desk{
+        display: none;
+    }
+    .sign__up{
+        max-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        .img-mobile{
+            display: block;
+            img{
+                width: 100%;
+                padding-block: 0rem;
+            }
+        }
+            
+           .text{
+            margin-left: 1.5rem;
+            margin-right: 0rem;
+            margin-block: 2rem;
+
+            h1{
+                font-size: 2.7rem;
+            }
+           
+
+            .text__marks{
+                font-size: .950rem;
+            line-height: 1.5;
+            margin-bottom: 2.5rem;
+            p{
+                align-items: start;
+                margin-block: .7rem;
+                padding-right: 2.5rem;
+            }
+
+            }
+           } 
+
+           form{
+            margin-right: 1.5rem;
+
+            label{
+                font-size: .850rem;
+            }
+
+            input{
+                padding: 1.1rem;
+
+                &::placeholder{
+                    font-size: 1rem;
+                }
+            }
+
+            #btn{
+                padding: 1.2rem;
+                font-size: 1.1rem;
+
+            }
+           }
+        }
+
+
+        .success{
+        padding-left: 1.5rem;
+        padding-right: 0rem;
+
+            border-radius: 0px;
+            min-width: 100vw;
+            height: 100vh;  
+            padding-top: 8rem;
+        
+            img{
+                width: 18%;
+                margin-bottom: 3rem;
+            }
+
+            p{  
+                padding-right: .950rem;
+                width: 100%;
+                font-size: .980rem;
+            }
+
+            #btn{
+                margin-top: 18rem;
+                display: block;
+                width: 94%;
+                font-size: 1.1rem;
+                padding: 1.3rem;
+            }
+        }
+
+    }
+
+   
+    .hidden{
+        display: none;
+    }
+    
